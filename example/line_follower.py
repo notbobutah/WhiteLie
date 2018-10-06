@@ -20,10 +20,10 @@ import picar
 picar.setup()
 
 REFERENCES = [200, 200, 200, 200, 200]
-#calibrate = True
-calibrate = False
-forward_speed = 80
-backward_speed = 70
+calibrate = True
+#calibrate = False
+forward_speed = 20
+backward_speed = 20
 turning_angle = 40
 
 max_off_track_count = 40
