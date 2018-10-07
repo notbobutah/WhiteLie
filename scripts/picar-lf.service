@@ -1,0 +1,14 @@
+[Unit]
+Description=Picar LineFollower Service
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/Whiteline
+ExecStart=/home/pi/Whiteline/scripts/start-picar-lf.sh
+Restart=on-failure # or always, on-abort, etc
+
+[Install]
+WantedBy=multi-user.target
+
