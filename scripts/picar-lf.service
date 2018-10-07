@@ -4,10 +4,10 @@ After=network.target
 
 [Service]
 Type=simple
-User=pi
+User=root
 WorkingDirectory=/home/pi/Whiteline
 ExecStart=/home/pi/Whiteline/scripts/start-picar-lf.sh
-Restart=on-failure # or always, on-abort, etc
+Restart=on-failure
 
 [Install]
 WantedBy=multi-user.target
